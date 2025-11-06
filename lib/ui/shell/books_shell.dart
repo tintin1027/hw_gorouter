@@ -53,9 +53,8 @@ Widget build(BuildContext context) {
     drawer: const Drawer(child: Center(child: Text('Menu'))),
     body: SafeArea(child: widget.child),
 
-    // (optional) hide bottom bar on detail if you want to match your 3rd Figma page:
-    // bottomNavigationBar: inDetail ? null : _buildNavBar(),
-    bottomNavigationBar: _buildNavBar(loc),
+    bottomNavigationBar: inDetail ? null : _buildNavBar(loc),
+    //bottomNavigationBar: _buildNavBar(loc),
   );
 }
 
